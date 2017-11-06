@@ -1,0 +1,10 @@
+Package: geomclone
+Type: Package
+Title: Clone 'ggplot2' Layers
+Version: 0.0.0.9000
+Author: Hiroaki Yutani
+Maintainer: Hiroaki Yutani <yutani.ini@gmail.com>
+Description: This is a test package for cloning layers.
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1.9000
