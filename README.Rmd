@@ -13,6 +13,8 @@ knitr::opts_chunk$set(
 ```
 # geomclone
 
+This is a test package for cloning ggplot2 Layers using "ggplot2_add" (https://github.com/tidyverse/ggplot2/pull/2309).
+
 ## Example
 
 ```{r usual}
@@ -20,6 +22,7 @@ library(ggplot2)
 
 p <- ggplot(iris, aes(Sepal.Length, Petal.Length)) +
   geom_line(colour = alpha("red", 0.5), size = 5) +
+  geom_point(colour = alpha("green", 0.5), size = 5) +
   theme_minimal()
 
 p
