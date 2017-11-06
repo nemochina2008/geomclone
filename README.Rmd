@@ -1,0 +1,32 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-"
+)
+```
+# geomclone
+
+## Example
+
+```{r usual}
+library(ggplot2)
+
+p <- ggplot(iris, aes(Sepal.Length, Petal.Length)) +
+  geom_line(colour = alpha("red", 0.5), size = 5) +
+  theme_minimal()
+
+p
+```
+
+```{r clone}
+library(geomclone)
+
+p + geom_clone(colour = alpha("blue", 0.5))
+```
